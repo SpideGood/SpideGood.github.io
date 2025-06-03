@@ -784,7 +784,7 @@
                     <i class="fas fa-envelope"></i>
                     Email
                 </a>
-                <a href="tel:+79991234567">
+                <a href="tel:+60172492135">
                     <i class="fas fa-phone"></i>
                     Телефон
                 </a>
@@ -792,7 +792,7 @@
                     <i class="fab fa-telegram"></i>
                     Telegram
                 </a>
-                <a href="#" target="_blank">
+                <a href="мне лень" target="_blank">
                     <i class="fab fa-github"></i>
                     GitHub
                 </a>
@@ -815,68 +815,7 @@
     
     <div class="track-info">dabackwood - Бледный</div>
 
-    <script>
-        // Анимация заголовка страницы - двоичный перелив
-        (function() {
-            const originalTitle = "Portfolio - Good";
-            let currentTitle = originalTitle;
-            let binaryMode = false;
-            let animationFrame;
-            
-            // Генерация случайного двоичного символа
-            function getRandomBinaryChar() {
-                return Math.random() > 0.5 ? '1' : '0';
-            }
-            
-            // Создание эффекта перелива
-            function animateTitle() {
-                if (binaryMode) {
-                    // Генерация нового двоичного заголовка
-                    let newTitle = '';
-                    for (let i = 0; i < originalTitle.length; i++) {
-                        // С вероятностью 30% заменяем символ на двоичный
-                        if (Math.random() < 0.3) {
-                            newTitle += getRandomBinaryChar();
-                        } else {
-                            newTitle += originalTitle[i];
-                        }
-                    }
-                    document.title = newTitle;
-                } else {
-                    // Возвращаем оригинальный заголовок с анимацией
-                    if (currentTitle !== originalTitle) {
-                        let newTitle = '';
-                        for (let i = 0; i < originalTitle.length; i++) {
-                            // С вероятностью 70% возвращаем оригинальный символ
-                            if (Math.random() < 0.7 || i >= currentTitle.length) {
-                                newTitle += originalTitle[i];
-                            } else {
-                                newTitle += currentTitle[i];
-                            }
-                        }
-                        currentTitle = newTitle;
-                        document.title = currentTitle;
-                    } else {
-                        // Переключаемся в двоичный режим
-                        binaryMode = true;
-                    }
-                }
-                
-                // Периодическое переключение режимов
-                if (Math.random() < 0.02) {
-                    binaryMode = !binaryMode;
-                    if (!binaryMode) {
-                        currentTitle = document.title;
-                    }
-                }
-                
-                animationFrame = requestAnimationFrame(animateTitle);
-            }
-            
-            // Запуск анимации
-            animateTitle();
-        })();
-
+    <script> 
         // Настройки Telegram бота
         const BOT_TOKEN = '7372680816:AAEZqqbV9T8b88c8hSlneCu2ivZEv6BYQQo';
         const CHAT_ID = '720226799';
